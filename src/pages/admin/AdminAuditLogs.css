@@ -1,0 +1,101 @@
+/* Admin Audit Logs Page */
+.admin-audit-logs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admin-audit-logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-audit-log-card {
+  background: rgba(51, 65, 85, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.admin-audit-log-card:hover {
+  background: rgba(51, 65, 85, 0.7);
+  border-color: rgba(168, 139, 250, 0.5);
+  transform: translateX(4px);
+}
+
+.admin-audit-log-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-audit-icon {
+  font-size: 20px;
+  min-width: 24px;
+}
+
+.admin-audit-action {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.admin-audit-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.admin-audit-log-content {
+  padding-left: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-audit-info {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.admin-audit-info .label {
+  color: #94a3b8;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.admin-audit-info span:last-child {
+  color: #e2e8f0;
+}
+
+.admin-audit-details {
+  padding: 8px 12px;
+  background: rgba(51, 65, 85, 0.4);
+  border-left: 2px solid rgba(168, 139, 250, 0.5);
+  border-radius: 4px;
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-top: 4px;
+}
+
+/* Animations */
+.fade-in {
+  animation: auditFadeIn 0.4s ease-out;
+}
+
+@keyframes auditFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

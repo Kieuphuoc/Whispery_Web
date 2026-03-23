@@ -1,0 +1,113 @@
+.admin-users-table {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+.admin-user-cell-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-user-avatar-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+.reputation-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.rep-high { background: #dcfce7; color: #166534; }
+.rep-medium { background: #fef9c3; color: #854d0e; }
+.rep-low { background: #fee2e2; color: #991b1b; }
+
+.role-select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.role-select:focus {
+  border-color: #6366f1;
+}
+
+.admin-filters-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  outline: none;
+}
+
+/* Pin Gallery */
+.admin-pins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.admin-pin-card {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.admin-pin-card:hover {
+  transform: translateY(-4px);
+}
+
+.admin-pin-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.admin-pin-body {
+  padding: 1.5rem;
+}
+
+.admin-pin-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.admin-pin-emotion {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
